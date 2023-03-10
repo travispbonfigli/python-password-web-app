@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Password Methods</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='../static/style.css') }}">
+</head>
+<body>
+	<h1>Password Methods</h1>
+
+	<!-- Signup V1: Plaintext Passwords -->
+	<h2>Signup V1: Plaintext Passwords</h2>
+	<form action="{{ url_for('signup_v1') }}" method="post">
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username" required>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+		<input type="submit" value="Signup">
+	</form>
+
+	<!-- Login V1: Plaintext Passwords -->
+	<h2>Login V1: Plaintext Passwords</h2>
+	<form action="{{ url_for('login_v1') }}" method="post">
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username" required>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+		<input type="submit" value="Login">
+	</form>
+
+	<!-- Signup V2: Hashed Passwords -->
+	<h2>Signup V2: Hashed Passwords</h2>
+	<form action="{{ url_for('signup_v2') }}" method="post">
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username" required>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+		<input type="submit" value="Signup">
+	</form>
+
+	<!-- Login V2: Hashed Passwords -->
+	<h2>Login V2: Hashed Passwords</h2>
+	<form action="{{ url_for('login_v2') }}" method="post">
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username" required>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+		<input type="submit" value="Login">
+	</form>
+</body>
+</html>
