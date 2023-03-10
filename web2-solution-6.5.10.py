@@ -106,4 +106,4 @@ def login_success():
     return render_template('login_success.html')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5555, ssl_context='adhoc')
+    app.run(host='0.0.0.0', port=7777, ssl_context='adhoc')
